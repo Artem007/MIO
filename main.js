@@ -1,8 +1,8 @@
+"use strict"
 let {trainPerceptron} = require('./utils/trainPerceptron');
 let {getGeuss} = require('./utils/trainPerceptron');
 
 //V1
-
 let inputs = [
   // [x1, x2, f(sum)],
   [-3, 2, 1],
@@ -15,15 +15,18 @@ let inputs = [
   [6, 1, 0],
 ];
 let weights = [1, 1];
-console.log(trainPerceptron(weights, inputs, 0.5));
-// console.log(getGeuss([1,1],inputs[0],0.5));
-// console.log(getGeuss([1,1],inputs[1],0.5));
-// console.log(getGeuss([1,1],inputs[2],0.5));
-// console.log(getGeuss([1,1],inputs[3],0.5));
-// console.log(getGeuss([1,1],inputs[4],0.5));
-// console.log(getGeuss([1,1],inputs[5],0.5));
-// console.log(getGeuss([1,1],inputs[6],0.5));
-// console.log(getGeuss([1,1],inputs[7],0.5));
+
+console.log(trainPerceptron(weights, inputs, 1));
+
+// console.log(correctGeuss([1, 1], inputs[0], 1));
+// console.log(getNewWeights([1, 1], inputs[0], 1));
+// console.log(getGeuss([1, 1], inputs[1], 1));
+// console.log(getGeuss([1, 1], inputs[2], 1));
+// console.log(getGeuss([1, 1], inputs[3], 1));
+// console.log(getGeuss([1,1],inputs[4],1));
+// console.log(getGeuss([1,1],inputs[5],1));
+// console.log(getGeuss([1,1],inputs[6],1));
+// console.log(getGeuss([1,1],inputs[7],1));
 
 //V2
 // let inputs = [
