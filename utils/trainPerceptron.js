@@ -6,10 +6,8 @@ let getGeuss = (w, x, n) => {
   for (let i = 0; i < w.length; i++) {
     sum += w[i] * x[i];
   }
-  // let result = 1 / (1 + Math.exp(-sum));
-  // if(result>=n)return 1;
-  // return 0;
-  if(sum>=1)return 1;
+  let result = 1 / (1 + Math.exp(-sum));
+  if(result>=n)return 1;
   return 0;
 }
 let correctGeuss = (w, x, n) => {
